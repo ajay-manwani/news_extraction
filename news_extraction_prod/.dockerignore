@@ -1,0 +1,74 @@
+# Ignore files not needed in production container
+
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+.env
+.env.*
+
+# Development and testing
+.git/
+.gitignore
+tests/
+test_*.py
+*_test.py
+pytest.ini
+.pytest_cache/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Documentation and development files
+README.md
+DEPLOYMENT.md
+.github/
+docs/
+
+# Log files
+*.log
+logs/
+flask.log
+deployment_error_*.log
+flask_*.log
+
+# Audio files (generated at runtime)
+*.mp3
+*.wav
+daily_news_*.mp3
+
+# Deployment and verification files
+deploy*.sh
+verify-deployment.py
+preflight-check.py
+test_*.py
+*_test.py
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Coverage reports
+.coverage
+coverage.xml
+htmlcov/
+
+# Jupyter notebooks (development only)
+*.ipynb
+.ipynb_checkpoints/

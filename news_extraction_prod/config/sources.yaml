@@ -1,0 +1,33 @@
+# RSS News Sources Configuration
+# Add or modify sources as needed
+
+economic_times:
+  rss: "https://economictimes.indiatimes.com/rssfeedsdefault.cms"
+  categories: ["business", "economy", "india"]
+  enabled: true
+  max_articles: 20
+
+times_of_india:
+  rss: "https://timesofindia.indiatimes.com/rssfeedstopstories.cms" 
+  categories: ["general", "india", "politics"]
+  enabled: true
+  max_articles: 20
+
+techcrunch:
+  rss: "http://feeds.feedburner.com/TechCrunch/"
+  categories: ["technology", "startups", "global"]
+  enabled: true
+  max_articles: 20
+
+# Additional sources (disabled by default)
+# bbc_world:
+#   rss: "http://feeds.bbci.co.uk/news/world/rss.xml"
+#   categories: ["international", "global"]
+#   enabled: false
+#   max_articles: 15
+
+# reuters:
+#   rss: "https://feeds.reuters.com/reuters/topNews"
+#   categories: ["international", "business"]
+#   enabled: false
+#   max_articles: 15

@@ -1,0 +1,43 @@
+# Cloud Run Dependencies
+# Google Cloud services
+google-cloud-storage==2.19.0
+google-cloud-secret-manager==2.24.0
+google-cloud-texttospeech==2.30.0
+
+# Web framework for Cloud Run HTTP triggers
+Flask==3.1.2
+gunicorn==23.0.0
+
+# RSS and web scraping
+feedparser==6.0.12
+newspaper3k==0.2.8
+lxml[html_clean]==5.3.1
+beautifulsoup4==4.12.3
+
+# Data processing
+pandas==2.3.2
+scikit-learn==1.7.2
+
+# AI integration  
+openai==1.68.2
+httpx==0.28.1
+
+# Audio processing and TTS
+pydub==0.25.1
+pyttsx3==2.99
+
+# Telegram integration (optional)
+python-telegram-bot==22.4
+
+# Environment and configuration  
+python-dotenv==1.0.1
+PyYAML==6.0.2
+
+# Date and time utilities
+python-dateutil==2.9.0
+
+# Web scraping
+playwright==1.51.0
+
+# Logging
+loguru==0.7.2
