@@ -9,6 +9,7 @@ import logging
 import time
 
 import httpx
+from config import settings as config
 
 logger = logging.getLogger(__name__)
 
@@ -103,7 +104,7 @@ class AISummarizer:
             )
 
             payload = {
-                "model": "openai/gpt-3.5-turbo",
+                "model": config.AI_MODEL,  # Use Grok 4 Fast from config
                 "messages": [{"role": "user", "content": prompt}],
                 "max_tokens": max_tokens,
                 "temperature": 0.7
