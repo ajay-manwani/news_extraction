@@ -53,15 +53,15 @@ python main.py  # Runs locally on port 8080
 ```bash
 # AI Models
 AI_MODEL=x-ai/grok-4-fast:free
-OPENROUTER_API_KEY=sk-or-v1-[your-key]
+OPENROUTER_API_KEY=sk-or-v1-[your-openrouter-key]
 
 # Google Services  
-GOOGLE_CLOUD_TTS_API_KEY=AIzaSyCQP0fxy6NU277OCvB3aP86azFHFWOdD9U
+GOOGLE_CLOUD_TTS_API_KEY=[your-google-tts-api-key]
 USE_GOOGLE_TTS=true
 
 # Telegram
-TELEGRAM_BOT_TOKEN=[your-token]
-TELEGRAM_CHAT_ID=[your-chat-id]
+TELEGRAM_BOT_TOKEN=[your-telegram-bot-token]
+TELEGRAM_CHAT_ID=[your-telegram-chat-id]
 
 # Environment
 ENVIRONMENT=production
