@@ -214,7 +214,7 @@ class AISummarizer:
 
                     Guidelines:
                     - Audience: general listeners who want a clear, concise, and engaging news update.
-                    - Length: aim for ~700 words (enough for ~5 minutes of spoken audio).
+                    - Length: aim for ~600 words (enough for ~4 minutes of spoken audio). Output shouldn't exceed 600 words.
                     - Style: conversational but professional, like a news podcast host. Avoid jargon.
                     - Structure:
                     1. Opening greeting and quick overview of what’s coming up.
@@ -222,6 +222,7 @@ class AISummarizer:
                     3. Within each segment, smoothly transition between stories.
                     4. Add short connective phrases (“Meanwhile…”, “In other news…”, “On a lighter note…”).
                     5. End with a brief wrap‑up and a sign‑off.
+                    6. Avoid using special characters like asterisks * or hashes #
 
                     - Do NOT repeat the summaries verbatim. Rewrite them into natural spoken language.
                     - Keep sentences varied in length for a natural rhythm when read aloud.
