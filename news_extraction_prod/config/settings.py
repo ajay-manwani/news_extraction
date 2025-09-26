@@ -25,7 +25,7 @@ class Config:
     OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
     AI_MODEL = "x-ai/grok-4-fast:free"  # Same model as tested in notebook
     MAX_TOKENS = 1000
-    TEMPERATURE = 0.3
+    TEMPERATURE = 0.7
     
     # TTS settings
     USE_GOOGLE_TTS = True  # Default to Google TTS for quality
@@ -41,7 +41,7 @@ class Config:
     DUPLICATE_THRESHOLD = 0.8
     
     # Storage settings
-    PODCAST_RETENTION_DAYS = 30
+    PODCAST_RETENTION_DAYS = 1  # Keep only 1 day to save storage and memory
     MAX_PODCAST_SIZE_MB = 25  # Telegram file size limit
     
     @classmethod

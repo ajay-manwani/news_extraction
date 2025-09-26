@@ -199,7 +199,7 @@ class AISummarizer:
             from config.settings import get_config
             config = get_config()
             
-            prompt = (
+            """prompt = (
                 "Below are summaries of multiple news articles. "
                 "Please create a comprehensive meta-summary that:\n"
                 "1. Identifies major themes and trends\n"
@@ -207,12 +207,41 @@ class AISummarizer:
                 "3. Notes any contrasting viewpoints or developments\n"
                 "4. Provides a high-level overview of the news landscape\n\n"
                 f"Article Summaries:\n{all_summaries}\n\nMeta-Summary:"
+            ) """
+
+            prompt= (
+                    """ You are a podcast scriptwriter. Your task is to take the following article summaries and transform them into a single, engaging 6-minute news podcast script.
+
+                    Guidelines:
+                    - Audience: general listeners who want a clear, concise, and engaging news update.
+                    - Length: aim for ~800–900 words (enough for ~6 minutes of spoken audio).
+                    - Style: conversational but professional, like a news podcast host. Avoid jargon.
+                    - Structure:
+                    1. Opening greeting and quick overview of what’s coming up.
+                    2. Group related stories into segments (e.g., world news, business, tech, science, culture).
+                    3. Within each segment, smoothly transition between stories.
+                    4. Add short connective phrases (“Meanwhile…”, “In other news…”, “On a lighter note…”).
+                    5. End with a brief wrap‑up and a sign‑off.
+
+                    - Do NOT repeat the summaries verbatim. Rewrite them into natural spoken language.
+                    - Keep sentences varied in length for a natural rhythm when read aloud.
+                    - Avoid filler words like “um” or “you know.”
+                    - Make sure the script flows logically and feels like one continuous show.
+
+                    Here are the article summaries to use:
+                    {all_summaries}
+
+                    Now, write the complete podcast script following the above rules.
+                """
             )
+            system_prompt = "You are a podcast scriptwriter. Write engaging, natural spoken scripts for a 10 to 20‑minute news podcast."
 
             payload = {
                 "model": config.AI_MODEL,  # Use Grok 4 Fast from config
-                "messages": [{"role": "user", "content": prompt}],
-                "max_tokens": 500,
+                "messages": [   {"role": "system", "content": system_prompt},
+                                {"role": "user", "content": prompt}
+                             ],
+                "max_tokens": 5000,
                 "temperature": config.TEMPERATURE
             }
 

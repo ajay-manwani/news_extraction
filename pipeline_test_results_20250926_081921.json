@@ -1,0 +1,41 @@
+{
+  "status": "success",
+  "timestamp": "2025-09-26T08:19:21.700358",
+  "processing_duration_seconds": 178.155738,
+  "articles_processed": 60,
+  "meta_summary": "Today's news covers 60 key stories focusing on business and economics, technology, politics and governance. Key developments include various updates across different sectors. Major highlights: Synopsis\n\nSilver ETFs have shown impressive returns this year, fueled by gold's breakout and tight supplies; Did you Know?\n\nThe world of cryptocurrencies is very dynamic. [Fallback meta-summary - AI summarization unavailable]",
+  "podcast": {
+    "local_file": "daily_news_20250926.mp3",
+    "duration_minutes": 1.2633833333333333,
+    "file_size_mb": 1.7364015579223633
+  },
+  "telegram_result": {
+    "podcast_sent": false,
+    "text_sent": false,
+    "primary_method": "failed",
+    "podcast_error": {
+      "success": false,
+      "error": "Telegram not configured",
+      "fallback_action": "file_saved_locally",
+      "file_path": "daily_news_20250926.mp3"
+    },
+    "text_result": {
+      "success": false,
+      "error": "Telegram not configured",
+      "fallback_action": "summary_logged"
+    }
+  },
+  "statistics": {
+    "start_time": "2025-09-26 08:16:23.544620",
+    "end_time": "2025-09-26 08:19:21.700358",
+    "processing_duration": 178.155738,
+    "articles_fetched": 60,
+    "articles_with_content": 60,
+    "articles_after_deduplication": 60,
+    "duplicates_removed": 0,
+    "ai_summaries_generated": 0,
+    "podcast_created": true,
+    "telegram_sent": false,
+    "errors": []
+  }
+}
