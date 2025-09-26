@@ -214,7 +214,7 @@ class AISummarizer:
 
                     Guidelines:
                     - Audience: general listeners who want a clear, concise, and engaging news update.
-                    - Length: aim for ~800–900 words (enough for ~6 minutes of spoken audio).
+                    - Length: aim for ~700 words (enough for ~5 minutes of spoken audio).
                     - Style: conversational but professional, like a news podcast host. Avoid jargon.
                     - Structure:
                     1. Opening greeting and quick overview of what’s coming up.
@@ -241,7 +241,7 @@ class AISummarizer:
                 "messages": [   {"role": "system", "content": system_prompt},
                                 {"role": "user", "content": prompt}
                              ],
-                "max_tokens": 5000,
+                "max_tokens": 4000,
                 "temperature": config.TEMPERATURE
             }
 

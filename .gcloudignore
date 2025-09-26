@@ -1,0 +1,66 @@
+# Ignore virtual environment
+.venv/
+venv/
+
+# Ignore large audio files
+*.mp3
+*.wav
+
+# Ignore log files
+*.log
+flask*.log
+
+# Ignore test files
+test_*.py
+*_test.py
+local_*.py
+debug_*.py
+
+# Ignore JSON test results
+pipeline_test_results_*.json
+
+# Ignore git
+.git/
+.gitignore
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary directories
+cloud_build_temp/
+grok_deploy/
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore environment files (they should be set in Cloud Run)
+.env
