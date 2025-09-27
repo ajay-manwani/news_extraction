@@ -86,11 +86,13 @@ class TTSGenerator:
         intro = f"""
         Welcome to {title} for {date}.
         
-        I'm your AI host, and today I'll be sharing the key highlights from multiple news sources, 
-        including insights from technology, business, and general news.
+        I'm your AI host"""
         
-        Let's dive into today's stories.
-        """
+        #, and today I'll be sharing the key highlights from multiple news sources, 
+        #including insights from technology, business, and general news.
+        
+        #Let's dive into today's stories.
+        #"""
         
         return intro.strip()
     
@@ -98,11 +100,11 @@ class TTSGenerator:
         """Create an outro for the podcast"""
         outro = """
         
-        That concludes today's news summary. 
+        That concludes today's news summary. """
         
-        Thank you for listening to our daily news roundup. 
-        Stay informed, and we'll see you in the next episode.
-        """
+        #Thank you for listening to our daily news roundup. 
+        #Stay informed, and we'll see you in the next episode.
+        #"""
         
         return outro.strip()
     
